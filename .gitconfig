@@ -1,0 +1,6 @@
+[user]
+	name = jamesedchristie
+	email = jamesedchristie1@gmail.com
+
+[alias]
+	graph = log --all --graph --decorate --oneline
