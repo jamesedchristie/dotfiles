@@ -25,6 +25,4 @@ plugin=(git ssh-agent)
 
 
 
-
-alias dotfiles='/usr/bin/git --git-dir=/home/jamesedchristie/.dotfiles/ --work-tree=/home/jamesedchristie'
 alias dotfiles='/usr/bin/git --git-dir=/home/jamesedchristie/.dotfiles/ --work-tree=/home/jamesedchristie'
