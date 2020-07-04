@@ -1,0 +1,1 @@
+/home/jamesedchristie/.zprezto/runcoms/zprofile
