@@ -1,7 +1,21 @@
 " Comments in Vimscript start with a `"`.
 
+call plug#begin('~/.vim/plugged')
+Plug 'mhartington/oceanic-next'
+Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'dense-analysis/ale'
+call plug#end()
 " If you open this file in Vim, it'll be syntax highlighted for you.
 
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+map <C-o> :NERDTreeToggle<CR>
 " Vim is based on Vi. Setting `nocompatible` switches from the default
 " Vi-compatibility mode and enables useful Vim functionality. This
 " configuration option turns out not to be necessary for the file named
@@ -78,6 +92,6 @@ inoremap <Left>  <ESC>:echoe "Use h"<CR>
 inoremap <Right> <ESC>:echoe "Use l"<CR>
 inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
-colorscheme desert
+colorscheme OceanicNext 
 
 filetype indent plugin on
