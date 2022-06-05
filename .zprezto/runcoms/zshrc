@@ -10,7 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 1;33/' | dircolors /dev/stdin)
+eval $(/opt/homebrew/bin/brew shellenv)
+
+#eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 1;33/' | dircolors /dev/stdin)
 
 # Customize to your needs...
 alias python=python3
@@ -25,6 +27,7 @@ alias gco='git checkout'
 
 plugin=(git ssh-agent)
 
+alias coding='cd ~/onedrive/coding'
 
 
 alias dotfiles='/usr/bin/git --git-dir=/home/jamesedchristie/.dotfiles/ --work-tree=/home/jamesedchristie'
